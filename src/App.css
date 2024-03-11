@@ -1,0 +1,66 @@
+@tailwind components;
+
+
+@layer components{
+    .form-container{
+        @apply flex flex-col items-center font-dm-sans px-14
+    }
+
+    .stepper-wrapper{
+        @apply flex justify-center items-center mt-8 mb-4 gap-5 
+    }
+
+    .stepper-box{
+        @apply flex items-center  gap-5
+    }
+
+    .stepper-circle{
+        @apply h-8 w-8 rounded-full flex items-center justify-center border-2 
+    }
+
+    .stepper-line{
+        @apply h-1 w-[300px] bg-current
+    }
+
+    .active-circle{
+        @apply bg-[#423FDD] text-white 
+    }
+
+    .active-line{
+        @apply text-[#423FDD]
+    }
+
+    .disable{
+        @apply text-gray-400
+    }
+
+    .stepper-box-container{
+        @apply relative
+    }
+
+    .submit-btn{
+        @apply w-full bg-[#6958E9] hover:bg-[#342E55] duration-200 text-white font-bold py-2 px-4 rounded mt-4 
+    }
+   
+
+    .page-container{
+        @apply border mt-20 w-[60%]  p-10
+    }
+
+    .selection{
+        @apply w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 rounded shadow leading-tight 
+    }
+
+    .upload-btn{
+        @apply bg-[#6958E9] hover:bg-[#342E55] duration-200 text-white font-bold py-2 px-4 rounded
+    }
+
+    .image-box{
+        @apply relative flex flex-col border-[#6958E9] border w-full items-center 
+        p-5 rounded-[5px] mt-10
+    }
+
+    .image-box label{
+        @apply absolute left-0 top-0 -mt-4 ml-2 p-2 bg-white text-[#9D9D9D] text-xs
+    }
+}
